@@ -3,3 +3,9 @@
 </p>
 
 # Nestjs practice project
+
+## Swagger docs
+
+Run server and go to the following address
+
+    <http://localhost:4000>/api/docs
