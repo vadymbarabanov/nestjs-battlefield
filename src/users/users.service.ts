@@ -8,10 +8,10 @@ export class UsersService {
   constructor(@InjectModel(User) private userRepository: typeof User) {}
 
   async createUser(dto: CreateUserDTO) {
-    return await this.userRepository.create(dto);
+    return this.userRepository.create(dto);
   }
 
   async getAllUsers() {
-    return await this.userRepository.findAll();
+    return this.userRepository.findAll();
   }
 }
