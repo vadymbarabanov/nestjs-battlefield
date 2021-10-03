@@ -3,7 +3,6 @@ import {
   DataType,
   Model,
   Table,
-  BelongsToMany,
   BelongsTo,
   ForeignKey,
 } from 'sequelize-typescript';
@@ -13,6 +12,7 @@ interface PostCreationAttrs {
   title: string;
   content: string;
   image: string;
+  userId: number;
 }
 
 @Table({ tableName: 'posts' })
